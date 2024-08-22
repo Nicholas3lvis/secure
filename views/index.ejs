@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API security</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 class="header">API AUTHORISATION</h1>
+
+         <button class="btn" style="background-color: rgb(102, 102, 4) ;"  type="submit" id="noAuth" onclick="window.location.href='/noAuth'">No Auth</button>
+        <button class="btn" style="background-color: green ;" id="basicAuth" onclick="window.location.href='/basicAuth'">basic Auth</button>
+        <button class="btn" style="background-color: purple;" id="apikey" onclick="window.location.href='/apiKey'">Api Key</button>
+        <button class="btn" style="background-color: blue ;" id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
+
+        <div class="response-area">
+            <p>
+                <%= content  %>
+            </p>
+        </div>
+    </center>
+    </div>
+</body>
+</html>
